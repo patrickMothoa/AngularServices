@@ -1,0 +1,50 @@
+
+<div style="background-color: rgb(83, 136, 4)"> 
+    <h1> 
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/register">
+             <mat-icon>adding</mat-icon>
+              <span>Create Task</span>
+        </button>
+        <button mat-menu-item routerLink="/viewlist">
+              <mat-icon>visibility</mat-icon>
+               <span> View Tasks </span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span>deleted items</span>
+        </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+         <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+          
+    <img width="50" alt="Angular Logo" src="assets\pen.png"> My {{ title }}. </h1>
+        <p>  <button routerLink="/register" style="margin-right:200px" mat-raised-button color="primary">Create Task</button><button routerLink="/viewlist" style="margin-right:200px" mat-raised-button color="primary"> View Tasks</button>
+        
+          <mat-form-field>
+            
+            <button routerLink="/viewlist" mat-menu-item>
+              <mat-icon>search </mat-icon>
+              <span> <input  matInput placeholder="search for task.." > </span>
+            </button>
+          </mat-form-field>
+
+        </p>
+          
+ </div>
+ <div id="bod">
+
+ </div>
+
+      
+
+<router-outlet></router-outlet>

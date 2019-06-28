@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  
+        <div id="main" >
+           
+      
+       <h2> <img width="90" alt="Angular Logo" src="assets\imaz.jpg"/> List of Tasks.</h2><br>
+    
+      <mat-card style="background-color:khaki">
+        <mat-list dense *ngFor = "let jobs of Dutiess">
+          <mat-list-item> <button style="background-color: khaki" mat-fab (click) = "remove(jobs)"><mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></button>
+             {{jobs.itemName}} _ {{jobs.itemPriority}} _ {{jobs.Date}}  </mat-list-item>
+      </mat-list>
+      </mat-card>
+      </div>

@@ -1,0 +1,33 @@
+<div style="text-align:center">
+  
+    <div id="main" >
+       
+  
+    <h2><img width="90" alt="Angular Logo" src="assets\icon8.png"/> Create New Task.</h2><br>
+  
+    <mat-card style="background-color:khaki">
+    Task : <mat-form-field>
+        <input  matInput placeholder="Enter Task"   [(ngModel)]= "myjobs" required >
+      </mat-form-field><br>
+    Priorities : <mat-form-field>
+          <input  matInput placeholder="Enter priority"   [(ngModel)]= "myprio" required >
+        </mat-form-field><br>
+    Priorities : <mat-form-field>
+          <input  matInput placeholder="Enter date" type="date"  [(ngModel)]= "mydate" required >
+         </mat-form-field><br>
+    <button  (click)="add(myjobs,myprio,mydate)" mat-raised-button color="primary"> Submit</button>
+    </mat-card>
+      <!-- displaying duties of array from component.ts taken from Services ---> 
+
+    <!-- <mat-card style="background-color: burlywood" > 
+      <ul *ngFor = "let jobs of Dutiess">
+      {{jobs.itemName}} _ 
+      {{jobs.itemPriority}}_
+      {{jobs.Date}}
+      </ul>
+      <button mat-fab (click)= "EditJobs(jobs)"> <mat-icon aria-hidden="false" aria-label="Example home icon" >edit</mat-icon> </button>  
+      <button mat-fab (click) = "remove(jobs)"><mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></button> 
+    </mat-card> -->
+  </div>
+  
+  <form> </form>
