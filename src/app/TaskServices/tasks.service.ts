@@ -13,6 +13,10 @@ export class TasksService {
    myprio: string = "";
    mydate: string = "";
    
+   editduty: string = "";
+   editPrio: string = "";
+   editDate: string = "";
+
    add(myjobs,myprio,mydate){
     this.Duties.push({itemName: myjobs, itemPriority: myprio, Date: mydate});
 
@@ -24,6 +28,17 @@ export class TasksService {
   remove(jobs){
     let index =this.Duties.indexOf(jobs)
     this.Duties.splice(index, 1);
+  }
+
+  EditJobs(jobs){
+    let index = this.Duties.indexOf(jobs)
+    this.Duties[index].itemName = prompt("Edit task:");
+    this.Duties[index].itemPriority = prompt("Edit Priority:");
+    this.Duties[index].Date = prompt("Edit Date")
+
+    // this.Duties[index].itemName = this.editduty;
+    // this.Duties[index].itemPriority = this.editPrio;
+    // this.Duties[index].Date = this.editDate;
   }
 
   constructor() {

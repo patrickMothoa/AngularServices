@@ -7,8 +7,10 @@
     
       <mat-card style="background-color:khaki">
         <mat-list dense *ngFor = "let jobs of Dutiess">
-          <mat-list-item> <button style="background-color: khaki" mat-fab (click) = "remove(jobs)"><mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></button>
-             {{jobs.itemName}} _ {{jobs.itemPriority}} _ {{jobs.Date}}  </mat-list-item>
+          <mat-list-item>
+              <button style="background-color: khaki" mat-fab (click)= "EditJobs(jobs)"> <mat-icon aria-hidden="false" aria-label="Example home icon" >edit</mat-icon> </button>
+            <button style="background-color: khaki" mat-fab (click) = "remove(jobs)"><mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon></button>
+              [{{jobs.itemName}} ]  [ {{jobs.itemPriority}} ] [ {{jobs.Date}} ]  </mat-list-item>
       </mat-list>
       </mat-card>
       </div>

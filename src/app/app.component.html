@@ -13,17 +13,17 @@
               <mat-icon>visibility</mat-icon>
                <span> View Tasks </span>
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item routerLink="/viewlist">
           <mat-icon>delete</mat-icon>
           <span>deleted items</span>
         </button>
           <button mat-menu-item disabled>
-            <mat-icon>voicemail</mat-icon>
-            <span>Check voice mail</span>
+            <mat-icon>settings </mat-icon>
+            <span> Settings </span>
           </button>
           <button mat-menu-item>
-            <mat-icon>notifications_off</mat-icon>
-         <span>Disable alerts</span>
+            <mat-icon>contacts</mat-icon>
+         <span> Contact Us</span>
             </button>
           </mat-menu>
           
@@ -33,7 +33,7 @@
           <mat-form-field>
             
             <button routerLink="/viewlist" mat-menu-item>
-              <mat-icon>search </mat-icon>
+              <mat-icon >search </mat-icon>
               <span> <input  matInput placeholder="search for task.." > </span>
             </button>
           </mat-form-field>

@@ -22,6 +22,10 @@ export class ViewlistComponent implements OnInit {
      this.taskservices.remove(jobs)
    }
 
+   EditJobs(jobs){
+     this.taskservices.EditJobs(jobs);
+   }
+
   ngOnInit() {
   }
 
